@@ -11,7 +11,7 @@ namespace utilPantalla
     /// </summary>
     public class ScreenCapture
     {
-        public string colorsMitjans()
+        public string colorsMitjans(int marge = 0)
         {
             colorRGB resultat;
             ScreenCapture sc = new ScreenCapture();
@@ -26,7 +26,7 @@ namespace utilPantalla
 
             //img.Save(@"c:\users\garf\a.png", ImageFormat.Png);// per testeig
 
-            resultat = sc.mitjanaImatge(img);
+            resultat = sc.mitjanaImatge(img,marge);
 
             return (resultat.r.ToString() + "," + resultat.g.ToString() + "," + resultat.b.ToString());
 
@@ -35,7 +35,7 @@ namespace utilPantalla
         {
             public ulong r; public ulong g; public ulong b;
         }
-        public colorRGB mitjanaImatge(Image img)
+        public colorRGB mitjanaImatge(Image img,int marge)
         {
             Bitmap bmp = new Bitmap(img);
             colorRGB resultat;
@@ -43,9 +43,9 @@ namespace utilPantalla
             resultat.g = 0;
             resultat.b = 0;
 
-            for (int x = 1; x < img.Width; x++)
+            for (int x = (1+marge); x < (img.Width-marge); x++)
             {
-                for (int y = 1; y < img.Height; y++)
+                for (int y = (1+marge); y < (img.Height-marge); y++)
                 {
                     Color clr = bmp.GetPixel(x, y);
                     resultat.r += clr.R;
