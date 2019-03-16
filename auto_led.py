@@ -1,21 +1,21 @@
+#!/usr/bin/env python
+# coding:utf-8
+
 import sys
 import flux_led
 import clr
 from time import sleep
+
 clr.AddReference(r"c:\python27\utilPantalla.dll")
 from utilPantalla import ScreenCapture
 
-#--------------------------config--------------
-ledsIP="192.168.1.25"
-refreshSeconds=2
-#--------------------------config end--------------
+marge = 4
 
-hola = ScreenCapture()
-sys.argv.append(ledsIP)
+capturer = ScreenCapture()
+sys.argv.append("192.168.1.25")
 sys.argv.append("-c")
-
 while(True):
-	color = hola.colorsMitjans()
+	color = capturer.colorsMitjans(int(marge))
 	print("posant color: "+ str(color))
 	sys.argv.append(str(color))
 	try:
@@ -23,4 +23,8 @@ while(True):
 	except:
 		pass
 	sys.argv.remove(str(color))
-	sleep(refreshSeconds)
+	sleep(2)
+
+
+
+
