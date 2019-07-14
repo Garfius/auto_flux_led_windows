@@ -32,3 +32,11 @@ The project is coded in c# and python, and is very simple.
 5-Follow the easy instructions
 6-Change the refreshSeconds value to the desired value (some might not work)
 ```
+
+Captures while working:
+[![See youtube video](https://www.youtube.com/upload_thumbnail?v=E6if6eAnrn8&t=1)](https://youtu.be/E6if6eAnrn8)
+
+![alt text](https://github.com/Garfius/auto_flux_led_windows/blob/master/auto_led.jpg)
+
+Hardware:
+![alt text](https://github.com/Garfius/auto_flux_led_windows/blob/master/aparell.PNG)
