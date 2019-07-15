@@ -34,7 +34,7 @@ The project is coded in c# and python, and is very simple.
 ```
 
 Captures while working:
-[![See youtube video](https://www.youtube.com/upload_thumbnail?v=E6if6eAnrn8&t=1)](https://youtu.be/E6if6eAnrn8)
+[![See youtube video](https://github.com/Garfius/auto_flux_led_windows/blob/master/youtube.PNG)](https://youtu.be/E6if6eAnrn8)
 
 ![alt text](https://github.com/Garfius/auto_flux_led_windows/blob/master/auto_led.jpg)
 
