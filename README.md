@@ -8,6 +8,8 @@ And is uses to send to led strip: https://github.com/beville/flux_led
 
 App to determine led strip IP address: https://play.google.com/store/apps/details?id=com.zengge.wifi (Magic home pro)
 
+Ip address goes to auto_led.py <-- set your own ip address.
+
 The project is coded in c# and python, and is very simple.
 
 **Install instructions, easy way**
